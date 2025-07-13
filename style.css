@@ -1,0 +1,474 @@
+/* === GLOBAL STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ff6e61bf;
+  color: #333;
+  scroll-behavior: smooth;
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* === SECTION TITLE === */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FF6F61;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 1s ease;
+  text-align: center;
+}
+
+
+
+/* === NAVBAR === */
+.glass-navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 100px;
+  background: black;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.navbar-collapse {
+  height: auto;
+  overflow: visible;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  position: relative;
+  z-index: 9999;
+}
+
+.navbar-nav .nav-link{
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.navbar-brand {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #FF6F61;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar-brand:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #F9C74F;
+  transition: width 0.3s ease-in-out;
+}
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-brand:hover:after {
+  width: 100%
+}
+
+.navbar .nav-link,
+.navbar .nav-link.active {
+  position: relative;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover 
+.navbar .nav-link.active:hover{
+  color: #Ff6f61;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #F9C74F;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  color: #F9C74F;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+  height: 100vh;
+  background: url('restaurant3.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  animation: slideDown 1s ease;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  animation: slideUp 1.5s ease;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.btn-cta {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #F9C74F;
+  color: #333;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounceIn 2s ease;
+}
+
+.btn-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  background-color: #ffe082;
+  color: #222;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 111, 97, 0.3);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #FF6F61;
+  margin-bottom: 0.5rem;
+  animation: fadeUp 0.8s ease;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ddd;
+  animation: fadeUp 1s ease;
+}
+
+.card-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #F9C74F;
+  margin: 1rem auto;
+  text-align: center;
+  animation: fadeUp 1.2s ease;
+}
+
+.card .btn-warning {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn-warning:hover {
+  background-color: #ffe082;
+  transform: scale(1.05);
+  color: #222;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(255, 111, 97, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
+.menu-img img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.05);
+}
+
+.menu-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.menu-card:hover .menu-overlay {
+  opacity: 1;
+}
+
+.menu-overlay h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #F9C74F;
+  margin-bottom: 0.5rem;
+}
+
+.menu-overlay p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #eee;
+}
+
+.menu-price {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #FF6F61;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.social-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+.custom-footer py-5 {
+  background-color: black
+}
+
+/* Main section background and layout */
+.service-section {
+  height: 100vh;
+  background: url('about.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Horizontal layout for cards */
+.service-section .row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px; /* Space between the cards */
+}
+
+/* Individual feature card styling */
+.service-section .col-md-4 {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  height: 230px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect for feature cards */
+.service-section .col-md-4:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling */
+.service-section i {
+  font-size: 2.2rem;
+  color: #f9c74f;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.service-section i:hover {
+  transform: scale(1.2);
+}
+
+/* Text inside feature cards */
+.service-section h5 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.custom-footer {
+  background-color: black; /* same as header */
+  padding: 30px 20px;
+  color: #f9c74f;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.5px;
+}
+
+.footer-contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-col {
+  color: white;
+
+  flex: 1;
+  min-width: 200px;
+  font-weight: 600;
+  
+}
+
+
+
+.footer-col.left {
+  text-align: left;
+}
+
+.footer-col.center {
+  text-align: center;
+}
+
+.footer-col.right {
+  text-align: right;
+}
+
+.footer-divider {
+  border-top: 3px solid #FF6F61;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.footer-rights {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* === Final Fix for Collapsed Navbar === */
+.navbar-collapse {
+  background-color: black;
+  padding: 1rem;
+  position: relative;
+  z-index: 9999;
+}
+
+.navbar-nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.navbar-nav .nav-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+}

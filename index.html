@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foodie Hub</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+  <!-- 🌟 Navbar -->
+  <nav class="navbar navbar-expand-lg glass-navbar ">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🍽 Rahimi Restaurant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#order">services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🌄 Hero Section -->
+<section id="home" class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content text-center text-white">
+    <h1 class="hero-heading">Wholesome Cravings, Just a Click Away.</h1>
+    <p class="hero-sub">From local chefs to your table — curated meals with love and spice.</p>
+    <a href="#menu" class="btn btn-warning btn-cta">Begin Your Feast</a>
+  </div>
+</section>
+
+  <!-- 🍽 Restaurants Section -->
+  <section id="restaurants" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="section-title">Top Popular Restaurants</h2>
+    <div class="row g-4">
+
+      <!-- 🔁 Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-black text-white border-0 h-100 shadow-sm">
+          <img src="restaurant1.jpg" class="card-img-top" alt="La Masseria – warmth in every flavor">
+          <div class="card-body">
+            <h5 class="card-title">La Masseria</h5>
+            <p class="card-text">A cozy blend of spices and comfort, served with heart.</p><br>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔁 Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-black text-white border-0 h-100 shadow-sm">
+          <img src="restaurant2.jpg" class="card-img-top" alt="Asador Etxebarri – elegant comfort food">
+          <div class="card-body">
+            <h5 class="card-title">Asador Etxebarri</h5>
+            <p class="card-text">Classic dishes with a golden touch of elegance.</p><br>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔁 Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-black text-white border-0 h-100 shadow-sm">
+          <img src="restaurants3webp" class="card-img-top" alt="Maido – trendy city-style dishes">
+          <div class="card-body">
+            <h5 class="card-title">Maido</h5>
+            <p class="card-text">Trendy flavors served with city flair and style.</p><br>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔁 Card 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-black text-white border-0 h-100 shadow-sm">
+          <img src="restaurant4.webp" class="card-img-top" alt="Alchemist – grilled specialties">
+          <div class="card-body">
+            <h5 class="card-title">Alchemist</h5>
+            <p class="card-text">Grilled perfection and fiery flavors that ignite your appetite.</p><br>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔁 Card 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-black text-white border-0 h-100 shadow-sm">
+          <img src="restaurant5.webp" class="card-img-top" alt="Gaggan – fresh seasonal meals">
+          <div class="card-body">
+            <h5 class="card-title">Gaggan</h5>
+            <p class="card-text">Fresh, seasonal ingredients served with elegance and care.</p><br>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔁 Card 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-black text-white border-0 h-100 shadow-sm">
+          <img src="restaurant6.jpg" class="card-img-top" alt="Crave Culture – global flavors and artful plating">
+          <div class="card-body">
+            <h5 class="card-title">Aghil</h5>
+            <p class="card-text">Global flavors and artistic plating that spark conversation.</p><br>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 🧁 Menu Section -->
+  <section id="menu" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="section-title">Our Signature Menu</h2>
+    <div class="row g-4">
+
+      <!-- 🥗 Zucchini Fries -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="zuuchini fries.jpeg" alt="Zucchini Fries – crispy and golden">
+            <div class="menu-overlay">
+              <h5>Zucchini Fries</h5>
+              <p>Golden-crisp veggie fries with a hint of spice.</p>
+              <span class="menu-price">Rs. 250</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="Chocolate lava cake.jpeg" alt="Chocolate lava - moltan bliss">
+            <div class="menu-overlay">
+              <h5>Chocolate Lava Dessert</h5>
+              <p>Warm cake oozing rich molten Chocolate.</p>
+              <span class="menu-price">Rs.380</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🥙 Veggie Wrap -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="Veggie wraP.jpeg" alt="Veggie Wrap – fresh and flavorful">
+            <div class="menu-overlay">
+              <h5>Veggie Wrap</h5>
+              <p>Stuffed with greens, hummus, and a touch of lemon zest.</p>
+              <span class="menu-price">Rs. 300</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🍜 Stir Fry -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="stir fry.jpeg" alt="Stir Fry – sizzling and savory">
+            <div class="menu-overlay">
+              <h5>Stir Fry</h5>
+              <p>Wok-tossed veggies in a tangy soy glaze.</p>
+              <span class="menu-price">Rs. 580</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="Aushak.jpg" alt="Aushak - savory dumplings">
+            <div class="menu-overlay">
+              <h5>Aushuk</h5>
+              <p>Afghan dumplings filled with leeks and spiced lentiles.</p>
+              <span class="menu-price">Rs.850</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🍉 Watermelon Bowl -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="watermelon.jpeg" alt="Watermelon Bowl – refreshing and vibrant">
+            <div class="menu-overlay">
+              <h5>Watermelon Bowl</h5>
+              <p>Juicy melon cubes with mint and feta crumble.</p>
+              <span class="menu-price">Rs. 350</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="shank.jpeg" alt="shnak - bold and slow-cooked ">
+            <div class="menu-overlay">
+              <h5>Shank</h5>
+              <p>Succulent lamb shank slow braised with herbs.</p>
+              <span class="menu-price">Rs.790</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- 🍝 Pasta Bowl -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="Peach and iced tea.jpg" alt="Pasta Bowl – creamy and comforting">
+            <div class="menu-overlay">
+              <h5>Pasta Bowl</h5>
+              <p>Alfredo-style pasta with roasted garlic and herbs.</p>
+              <span class="menu-price">Rs. 400</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🍫 Energy Bites -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="energy_bites.jpg" alt="Energy Bites – wholesome and rich">
+            <div class="menu-overlay">
+              <h5>Energy Bites</h5>
+              <p>Rolled oats, dates, and cocoa for a guilt-free boost.</p>
+              <span class="menu-price">Rs. 470</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 🍧 Kulfi -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="dessert_kulfi.jpg" alt="Kulfi – traditional and indulgent">
+            <div class="menu-overlay">
+              <h5>Kulfi</h5>
+              <p>Cardamom-infused frozen delight with pistachio crunch.</p>
+              <span class="menu-price">Rs. 200</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="susshi.webp" alt="susshi nigiri - artisticand fresh">
+            <div class="menu-overlay">
+              <h5>Sushi Nigiri</h5>
+              <p>Delicate rice topped with fresh-cut sashimi</p>
+              <span class="menu-price">Rs.980</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="menu_pumkin_soup.jpeg" alt="Pumkin - roasted and spiced">
+            <div class="menu-overlay">
+              <h5>Pumkin Delight</h5>
+              <p>Honey-roasted Pumkin cubes with papper flakes.</p>
+              <span class="menu-price">Rs.480</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="sandwich.jpeg" alt="sandwich - stacked goodness">
+            <div class="menu-overlay">
+              <h5>Grilled Sandwich</h5>
+              <p>Cheddar, tomato, greens layerd on toasted bread.</p>
+              <span class="menu-price">Rs.500</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="apple Pie.jpeg" alt="Apple pie - classic comfort">
+            <div class="menu-overlay">
+              <h5>Apple pie</h5>
+              <p>spiced apple filling in golden buttery crust</p>
+              <span class="menu-price">Rs.780</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🍮 Vanilla Cotta -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="vanilla cotta.jpg" alt="Vanilla Cotta – silky and sweet">
+            <div class="menu-overlay">
+              <h5>Vanilla Cotta</h5>
+              <p>Velvety vanilla cream topped with berry drizzle.</p>
+              <span class="menu-price">Rs. 380</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🥤 Oreo Shake -->
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="beverage_oreo_shake.jpeg" alt="Oreo Shake – chilled and creamy">
+            <div class="menu-overlay">
+              <h5>Oreo Shake</h5>
+              <p>Crushed Oreos blended into vanilla ice cream bliss.</p>
+              <span class="menu-price">Rs. 450</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="baklava.jpeg" alt="Baklava - sweet and crisp "> 
+            <div class="menu-overlay">
+              <h5>Baklava</h5>
+              <p>Flaky pastry layers with honey and walnut filling.</p>
+              <span class="menu-price">Rs.650</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="menu-card">
+          <div class="menu-img">
+            <img src="Mashroom-Pasta.jpg" alt="Mushroomv - earthy and rich "> 
+            <div class="menu-overlay">
+              <h5>Garlic Mushroom</h5>
+              <p>Sauteed mushroom with herbs and olive oil.</p>
+              <span class="menu-price">Rs.800</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 📦 Order & Services Section -->
+  <section id="order" class="py-5 service-section">
+    <div class="container">
+      <h2 class="text-center section-title text-white">Why Choose Us?</h2>
+      <div class="row text-center text-white mb-5">
+        <div class="col-md-4">
+          <i class="bi bi-truck fs-1"></i>
+          <h5>Fast Delivery</h5>
+          <p>Meals arrive fresh and fast — no waiting, just eating!</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-award fs-1"></i>
+          <h5>Premium Chefs</h5>
+          <p>Local kitchen experts serve delightful culinary experiences.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-credit-card fs-1"></i>
+          <h5>Secure Payments</h5>
+          <p>Peace of mind with encrypted checkout and flexible methods.</p>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- 📖 About Section -->
+  <section id="about" class="py-5 about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3">
+          <img src="coffee.webp" class="img-fluid rounded shadow" alt="About Us">
+        </div>
+        <div class="col-md-6">
+          <h3><strong>Our Story</strong></h3>
+          <p style="font-size: x-large;">Foodie Hub began with one belief: every meal tells a story. We connect passionate chefs with food lovers seeking something special — and we deliver it with flavor and feeling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📬 Contact & Footer -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container text-center text-md-start">
+      <h2 class="text-white mb-4">Get in Touch</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <form action="#">
+            <input type="text" class="form-control mb-3" placeholder="Your Name" required />
+            <input type="email" class="form-control mb-3" placeholder="Your Email" required />
+            <textarea class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-light btn-send">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔧 Bootstrap JS -->
+  
+
+<footer class="custom-footer">
+  <div class="footer-contact-row">
+    <div class="footer-col left">👤 Suhaila Rahimi</div>
+    <div class="footer-col center">📧 suheylarahimi@gmail.com</div>
+    <div class="footer-col right">📞 03496278554</div>
+  </div>
+  <hr class="footer-divider" />
+  <p class="footer-rights">© 2025 Foodie Hub. All rights reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
